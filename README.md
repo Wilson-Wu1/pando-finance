@@ -8,7 +8,7 @@ It connects participants who deploy capital ("Buyers") with entities that contro
 - [**Pando Finance Dapp**](https://www.pandofinance.dev/pando/) is running live on the cloud.
 - [**Documentation**](./doc/Documentation.md) describes the project and the dapp in detail.
 - [**Slide Deck**](./doc/pdf/) describes the project.
-- [**YouTube Video**](./doc/img/pando_finance.png) is the demo video for the hackathon.
+- [**YouTube Video**](https://www.youtube.com/watch?v=Dr_O07xB1xw) is the demo video for the hackathon.
 
 ### Pando Finance Main Window
 
