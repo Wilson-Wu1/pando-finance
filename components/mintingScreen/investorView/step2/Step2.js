@@ -7,14 +7,13 @@ import classes from './step2.module.scss'
 
 import { confirmPaymentEscrow } from '../../../../app/user/userSlice'
 
-import {
-  setBid
-} from '../../../../app/user/userSlice'
+import { setBid } from '../../../../app/user/userSlice'
 
 export function Step2({ forwardStep }) {
   const dispatch = useDispatch()
   const mintedNftData = useSelector((state) => state.user.mintedNftData)
   const bid = useSelector((state) => state.user.bid)
+
   return (
     <>
       <h3 className={classes.stepTitle}>Submit offer for NFT royalty stream</h3>
@@ -37,7 +36,7 @@ export function Step2({ forwardStep }) {
 
             onSubmit={(values, { setSubmitting }) => {
               console.log(bid)
-              dispatch(confirmPaymentEscrow(bid))
+              dispatch(confirmPaymentEscrow())
               forwardStep()
             }}
           >

@@ -144,7 +144,7 @@ export const confirmPaymentEscrow = createAsyncThunk(
       const transactionLink =
         'https://rinkeby.etherscan.io/tx/' + result.transactionHash
       console.log(transactionLink)
-      alert('Payment for NFT Successful: ' + transactionLink)
+      alert('Bid for NFT Successful: ' + transactionLink)
 
       return result
     } catch (err) {
@@ -179,7 +179,7 @@ export const confirmDeliveryEscrow = createAsyncThunk(
       const transactionLink =
         'https://rinkeby.etherscan.io/tx/' + result.transactionHash
       console.log(transactionLink)
-      alert('Funds/NFT Delivery Successful: ' + transactionLink)
+      alert('Funds/Royalty Stream Delivery Successful: ' + transactionLink)
 
       return result
     } catch (err) {
