@@ -23,11 +23,8 @@ export function Step2({ forwardStep }) {
   const preMintingURI = useSelector((state) => state.user.preMintingData.nfturi)
 
   const handleSubmit = useCallback(async () => {
-    //await dispatch(mintNft())
-    const result = await dispatch(requestConversion())
-    console.log( (parseInt(result.payload.resultEthUsd) / 1e8).toFixed(2) )
-    console.log( (parseInt(result.payload.resultBtcUsd) / 1e8).toFixed(2) )
-    console.log( (parseInt(result.payload.resultEurUsd) / 1e8).toFixed(2) )
+    await dispatch(mintNft())
+
     forwardStep()
   }, [mintNft, forwardStep, dispatch])
 
