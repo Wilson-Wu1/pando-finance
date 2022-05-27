@@ -23,11 +23,19 @@ export function Header() {
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
+      
         <Logo />
       </div>
+      
       <div className={classes.navigation}>
+        {conversion&&(
+          //I can't place this div above the <div className={classes.currenciesWrapper}> inside conversion :(
+          <div className={classes.chainlink}>Chainlink Pricefeeds</div>
+        )}
+        
         {conversion && (
           <div className={classes.currenciesWrapper}>
+            
             <div className={classes.headerRow}>
               <div className={classes.cell}>ETH/USD</div>
               <div className={classes.cell}>BTC/USD</div>
