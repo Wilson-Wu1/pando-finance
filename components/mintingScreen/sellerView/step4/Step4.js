@@ -11,6 +11,7 @@ import classes from './step4.module.scss'
 export function Step4({}) {
   const dispatch = useDispatch()
   const mintedNftData = useSelector((state) => state.user.mintedNftData)
+  const bid = useSelector((state) => state.user.bid)
 
   const iconAccept = (
     <svg
@@ -57,9 +58,9 @@ export function Step4({}) {
       <div className={classes.table}>
         <div className={classes.row}>
           <div className={classnames(classes.cell, classes.th)}>Bidder</div>
-          <div className={classnames(classes.cell, classes.th)}>Bid price</div>
+          <div className={classnames(classes.cell, classes.th)}>Current Highest Bid</div>
           <div className={classnames(classes.cell, classes.th)}>Bid date</div>
-          <div className={classnames(classes.cell, classes.th)}></div>
+          <div className={classnames(classes.cell, classes.th)}>Offer</div>
         </div>
         {mintedNftData ? (
           <div className={classes.row}>
@@ -67,7 +68,7 @@ export function Step4({}) {
               <img className={classes.preview} src={mintedNftData.image} />
               {mintedNftData.name}
             </div>
-            <div className={classes.cell}>{mintedNftData.price}</div>
+            <div className={classes.cell}>{bid}</div>
             <div className={classes.cell}>
               {new Date().toLocaleDateString()}
             </div>

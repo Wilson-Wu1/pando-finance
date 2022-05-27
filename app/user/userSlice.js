@@ -126,7 +126,7 @@ export const confirmPaymentEscrow = createAsyncThunk(
       gasPrice = parseInt(gasPrice)
       //console.log(gasPrice, ' gasPrice')
 
-      const price = state.user.mintedNftData.price
+      const price = state.user.bid
 
       const result = await state.user.escrowVMContract.methods
         .confirmPayment(
@@ -291,6 +291,9 @@ export const userSlice = createSlice({
     setChainlinkVMContract: (state, action) => {
       state.chainlinkVMContract = action.payload
     },
+    setBid: (state, action) => {
+      state.bid = action.payload
+    },
     setRole: (state, action) => {
       state.role = action.payload
     },
@@ -306,6 +309,7 @@ export const userSlice = createSlice({
     setPreMintingURI: (state, action) => {
       state.preMintingData.nfturi = action.payload
     },
+    
   },
   extraReducers: (builder) => {
     builder
@@ -331,6 +335,7 @@ export const {
   setVmContract,
   setEscrowVMContract,
   setChainlinkVMContract,
+  setBid,
   setPreMintingName,
   setPreMintingPrice,
   setPreMintingRoyalty,

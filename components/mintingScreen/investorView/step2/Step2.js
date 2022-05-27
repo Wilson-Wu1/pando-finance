@@ -7,10 +7,14 @@ import classes from './step2.module.scss'
 
 import { confirmPaymentEscrow } from '../../../../app/user/userSlice'
 
+import {
+  setBid
+} from '../../../../app/user/userSlice'
+
 export function Step2({ forwardStep }) {
   const dispatch = useDispatch()
   const mintedNftData = useSelector((state) => state.user.mintedNftData)
-
+  const bid = useSelector((state) => state.user.bid)
   return (
     <>
       <h3 className={classes.stepTitle}>Submit offer for NFT royalty stream</h3>
@@ -30,15 +34,10 @@ export function Step2({ forwardStep }) {
             validateOnChange={false}
             validateOnBlur={false}
             initialValues={{ name: '', royalty: '', price: '', nfturi: '' }}
-            validate={(values) => {
-              const errors = {}
-              if (!values.price) {
-                errors.price = 'Required'
-              }
-              return errors
-            }}
+
             onSubmit={(values, { setSubmitting }) => {
-              dispatch(confirmPaymentEscrow())
+              console.log(bid)
+              dispatch(confirmPaymentEscrow(bid))
               forwardStep()
             }}
           >
@@ -47,7 +46,10 @@ export function Step2({ forwardStep }) {
                 <label className={classes.label} htmlFor="price">
                   Bid Price (ETH)
                   <Field
+                  
                     className={classes.inputField}
+                    value={bid}
+                    onChange={(e) => dispatch(setBid(e.target.value))}
                     type="price"
                     name="price"
                   />

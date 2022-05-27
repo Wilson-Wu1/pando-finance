@@ -12,6 +12,7 @@ export function Step1({
   forwardToCheckOffers,
 }) {
   const mintedNftData = useSelector((state) => state.user.mintedNftData)
+  const bid = useSelector((state) => state.user.bid)
 
   return (
     <>
@@ -22,7 +23,7 @@ export function Step1({
           <div className={classnames(classes.cell, classes.th)}>Bidder</div>
           <div className={classnames(classes.cell, classes.th)}>Bid price</div>
           <div className={classnames(classes.cell, classes.th)}>List date</div>
-          <div className={classnames(classes.cell, classes.th)}></div>
+          <div className={classnames(classes.cell, classes.th)}>Current Highest Bid</div>
         </div>
         {mintedNftData ? (
           <div
@@ -37,7 +38,7 @@ export function Step1({
             <div className={classes.cell}>
               {new Date().toLocaleDateString()}
             </div>
-            <div className={classes.cell}></div>
+            <div className={classes.cell}>{bid}</div>
           </div>
         ) : (
           <div className={classes.cell}>There is no data yet</div>
