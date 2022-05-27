@@ -12,7 +12,7 @@ It connects participants who deploy capital ("Buyers") with entities that contro
 
 ### Pando Finance Main Window
 
-![Main Window](./doc/img/TILE_Games_Main_Window.png)
+![Main Window](./doc/img/)
 
 ## Pando Finance Project Team
 Our team consists of DeFi developers who are creating value through innovation.
