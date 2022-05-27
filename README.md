@@ -5,14 +5,14 @@ It connects participants who deploy capital ("Buyers") with entities that contro
 ![image](https://user-images.githubusercontent.com/100101844/170694279-e2886d3f-51c1-4dc8-be6f-c67103cdeb3f.png)
 
 # START HERE:
-- [**Pando Finance Dapp**](https://6290e83a493a2500562b0906--subtle-granita-1e79e7.netlify.app/pando/) is running live on the cloud.
+- [**Pando Finance Dapp**](https://www.pandofinance.dev/pando/) is running live on the cloud.
 - [**Documentation**](./doc/Documentation.md) describes the project and the dapp in detail.
 - [**Slide Deck**](./doc/pdf/) describes the project.
-- [**YouTube Video**]() is the demo video for the hackathon.
+- [**YouTube Video**](./doc/img/pando_finance.png) is the demo video for the hackathon.
 
 ### Pando Finance Main Window
 
-![Main Window]()
+![Main Window](./doc/img/pando_finance.png)
 
 ## Pando Finance Project Team
 Our team consists of DeFi developers who are creating value through innovation.
@@ -22,22 +22,22 @@ Maximilien Le Sieur \
 HARVARD BUSINESS SCHOOL \
 MBA, Class of 2022 \
 https://www.linkedin.com/in/maximilien-le-sieur/ \
-![image](https://user-images.githubusercontent.com/100101844/170694637-4279e0ff-703e-49d5-89e1-1e832e46937d.png) \
+![image](https://user-images.githubusercontent.com/100101844/170694637-4279e0ff-703e-49d5-89e1-1e832e46937d.png) 
 
 ## Front End Developer
 Maria Mironova \
 https://github.com/webstalt \
-![image](https://user-images.githubusercontent.com/100101844/170693076-c163a04f-fec2-4bbb-be1a-a9f90e55aec7.png) \
+![image](https://user-images.githubusercontent.com/100101844/170693076-c163a04f-fec2-4bbb-be1a-a9f90e55aec7.png) 
 
 ## Smart Contract Developer
 Albert Vo \
 https://github.com/albert-vo-crypto \
-![image](https://user-images.githubusercontent.com/100101844/170693383-f8e31532-9c25-46bb-8240-77f9b037b453.png) \
+![image](https://user-images.githubusercontent.com/100101844/170693383-f8e31532-9c25-46bb-8240-77f9b037b453.png) 
 
 ## Smart Contract Developer
 Wilson Wu \
 https://github.com/Wilson-Wu1 \
-![image](https://user-images.githubusercontent.com/100101844/170693408-aa396f35-189a-4152-981d-0e0b25684804.png) \
+![image](https://user-images.githubusercontent.com/100101844/170693408-aa396f35-189a-4152-981d-0e0b25684804.png) 
 
 
 ## Getting Started
