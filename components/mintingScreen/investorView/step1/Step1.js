@@ -20,9 +20,9 @@ export function Step1({
 
       <div className={classes.table}>
         <div className={classes.row}>
-          <div className={classnames(classes.cell, classes.th)}>Bidder</div>
-          <div className={classnames(classes.cell, classes.th)}>Bid price</div>
-          <div className={classnames(classes.cell, classes.th)}>List date</div>
+          <div className={classnames(classes.cell, classes.th)}>NFT</div>
+          <div className={classnames(classes.cell, classes.th)}>NFT Price</div>
+          <div className={classnames(classes.cell, classes.th)}>List Date</div>
           <div className={classnames(classes.cell, classes.th)}>Current Highest Bid</div>
         </div>
         {mintedNftData ? (

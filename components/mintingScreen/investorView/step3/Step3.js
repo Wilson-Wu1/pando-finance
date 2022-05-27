@@ -11,8 +11,8 @@ export function Step3({}) {
       <h3 className={classes.stepTitle}>Funding & Bid Dashboard</h3>
       <div className={classes.table}>
         <div className={classes.row}>
-          <div className={classnames(classes.cell, classes.th)}></div>
-          <div className={classnames(classes.cell, classes.th)}>Bid Price</div>
+          <div className={classnames(classes.cell, classes.th)}>NFT</div>
+          <div className={classnames(classes.cell, classes.th)}>NFT Price</div>
           <div className={classnames(classes.cell, classes.th)}>Bid Date</div>
           <div className={classnames(classes.cell, classes.th)}>
             Funding Status
@@ -27,7 +27,7 @@ export function Step3({}) {
             />
             Aotearoa Dreaming
           </div>
-          <div className={classes.cell}>350 ETH</div>
+          <div className={classes.cell}>35 ETH</div>
           <div className={classes.cell}>05/04/2022</div>
           <div className={classes.cell}>Funded</div>
           <div className={classes.cell}>
@@ -43,7 +43,7 @@ export function Step3({}) {
             />
             Hanky Panky
           </div>
-          <div className={classes.cell}>550 ETH</div>
+          <div className={classes.cell}>55 ETH</div>
           <div className={classes.cell}>05/12/2022</div>
           <div className={classes.cell}>Funded</div>
           <div className={classes.cell}>
