@@ -14,6 +14,7 @@ contract MinimalERC721 is ERC721, Ownable, RoyaltiesV2Impl {
     Counters.Counter private _tokenIdTracker;
     Counters.Counter private _tokenIds;
     
+    // ERC2981 NFT Royalty
     bytes4 private constant _INTERFACE_ID_ERC2981 = 0x2a55205a;
     constructor() ERC721("Minimal", "MIN") {}
 
