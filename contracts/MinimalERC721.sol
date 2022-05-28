@@ -13,6 +13,8 @@ contract MinimalERC721 is ERC721, Ownable, RoyaltiesV2Impl {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdTracker;
     Counters.Counter private _tokenIds;
+    
+    bytes4 private constant _INTERFACE_ID_ERC2981 = 0x2a55205a;
     constructor() ERC721("Minimal", "MIN") {}
 
     function mint(address _to) public onlyOwner  returns(uint256) {
@@ -64,9 +66,18 @@ contract MinimalERC721 is ERC721, Ownable, RoyaltiesV2Impl {
     }
 
     function supportsInterface(bytes4 interfaceId) public view virtual override(ERC721) returns (bool) {
-        if(interfaceId == LibRoyaltiesV2._INTERFACE_ID_ROYALTIES) {
+        if (interfaceId == LibRoyaltiesV2._INTERFACE_ID_ROYALTIES) {
             return true;
         }
+        
+        if (interfaceId == _INTERFACE_ID_ERC2981) {
+            return true;
+        }
+        
         return super.supportsInterface(interfaceId);
-    } 
+    }
+    function _baseURI() internal view virtual override returns (string memory) {
+        return "https://mydomain/metadata/";
+    }
+
 }
