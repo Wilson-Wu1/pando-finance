@@ -78,7 +78,7 @@ contract MinimalERC721 is ERC721, Ownable, RoyaltiesV2Impl {
         return super.supportsInterface(interfaceId);
     }
     function _baseURI() internal view virtual override returns (string memory) {
-        return "https://mydomain/metadata/";
+        return "https://www.pandofinance.dev/pando/metadata/";
     }
 
 }
